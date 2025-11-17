@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { type Order, type OrderStatus } from '../types';
+import { type Order, type OrderStatus } from '../types.ts';
 
 interface OrderCardProps {
   order: Order;

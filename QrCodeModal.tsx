@@ -1,6 +1,6 @@
 
 import React, { useRef, useEffect, useState } from 'react';
-import { type RestaurantTable } from '../types';
+import { type RestaurantTable } from '../types.ts';
 
 interface QrCodeModalProps {
   table: RestaurantTable;

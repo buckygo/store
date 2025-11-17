@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { type Dish } from '../types';
+import { type Dish } from '../types.ts';
 
 interface MenuItemProps {
   dish: Dish;

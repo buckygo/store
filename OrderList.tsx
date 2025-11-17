@@ -1,7 +1,7 @@
 
 import React, { useState, useMemo } from 'react';
-import { type Order, type OrderStatus } from '../types';
-import OrderCard from './OrderCard';
+import { type Order, type OrderStatus } from '../types.ts';
+import OrderCard from './OrderCard.tsx';
 
 interface OrderListProps {
   orders: Order[];

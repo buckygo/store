@@ -1,5 +1,5 @@
 
-import { type Dish } from './types';
+import { type Dish } from './types.ts';
 
 export const RESTAURANT_NAME = "中正广场餐厅";
 export const MENU_STORAGE_KEY = 'restaurant-menu-data';

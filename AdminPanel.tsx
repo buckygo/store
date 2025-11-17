@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import { type Dish, type Order, type OrderStatus } from '../types';
-import DishForm from './DishForm';
-import OrderList from './OrderList';
-import MenuManagement from './MenuManagement';
-import TableManagement from './TableManagement';
+import { type Dish, type Order, type OrderStatus } from '../types.ts';
+import DishForm from './DishForm.tsx';
+import OrderList from './OrderList.tsx';
+import MenuManagement from './MenuManagement.tsx';
+import TableManagement from './TableManagement.tsx';
 
 interface AdminPanelProps {
   menuData: Dish[];

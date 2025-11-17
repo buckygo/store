@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { type Order, type OrderStatus } from '../types';
+import { type Order, type OrderStatus } from '../types.ts';
 
 const statusMap: Record<OrderStatus, { text: string; color: string; textColor: string }> = {
   new: { text: '新订单', color: 'bg-blue-100', textColor: 'text-blue-800' },

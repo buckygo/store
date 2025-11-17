@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { RESTAURANT_NAME } from '../constants';
+import { RESTAURANT_NAME } from '../constants.ts';
 
 interface RestaurantInfoProps {
   onToggleView: () => void;

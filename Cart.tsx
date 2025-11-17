@@ -1,6 +1,7 @@
+
 import React from 'react';
-import { type CartItem as CartItemType } from '../types';
-import CartItem from './CartItem';
+import { type CartItem as CartItemType } from '../types.ts';
+import CartItem from './CartItem.tsx';
 
 interface CartProps {
   items: CartItemType[];

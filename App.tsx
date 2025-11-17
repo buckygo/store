@@ -1,16 +1,16 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
-import Menu from './components/Menu';
-import Cart from './components/Cart';
-import CategoryTabs from './components/CategoryTabs';
-import AdminPanel from './components/AdminPanel';
-import CartFooter from './components/CartFooter';
-import RestaurantInfo from './components/RestaurantInfo';
-import DishDetailModal from './components/DishDetailModal';
-import CurrentOrderTracker from './components/CurrentOrderTracker';
-import OrderConfirmation from './components/OrderConfirmation';
-import { INITIAL_MENU_DATA, MENU_STORAGE_KEY, ORDERS_STORAGE_KEY } from './constants';
-import { type CartItem, type Dish, type Specification, type Order } from './types';
+import Menu from './components/Menu.tsx';
+import Cart from './components/Cart.tsx';
+import CategoryTabs from './components/CategoryTabs.tsx';
+import AdminPanel from './components/AdminPanel.tsx';
+import CartFooter from './components/CartFooter.tsx';
+import RestaurantInfo from './components/RestaurantInfo.tsx';
+import DishDetailModal from './components/DishDetailModal.tsx';
+import CurrentOrderTracker from './components/CurrentOrderTracker.tsx';
+import OrderConfirmation from './components/OrderConfirmation.tsx';
+import { INITIAL_MENU_DATA, MENU_STORAGE_KEY, ORDERS_STORAGE_KEY } from './constants.ts';
+import { type CartItem, type Dish, type Specification, type Order } from './types.ts';
 
 const App: React.FC = () => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);

@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { type Dish, type Specification } from '../types';
+import { type Dish, type Specification } from '../types.ts';
 
 interface DishFormProps {
   dish: Dish | null;

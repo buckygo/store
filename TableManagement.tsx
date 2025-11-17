@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { type RestaurantTable } from '../types';
-import { TABLES_STORAGE_KEY } from '../constants';
-import QrCodeModal from './QrCodeModal';
+import { type RestaurantTable } from '../types.ts';
+import { TABLES_STORAGE_KEY } from '../constants.ts';
+import QrCodeModal from './QrCodeModal.tsx';
 
 const TableManagement: React.FC = () => {
   const [tables, setTables] = useState<RestaurantTable[]>(() => {
@@ -79,7 +79,7 @@ const TableManagement: React.FC = () => {
             value={newTableName}
             onChange={(e) => setNewTableName(e.target.value)}
             placeholder="例如：A01, 包廂B2"
-            className="flex-grow shadow-sm appearance-none border border-gray-300 bg-gray-800 rounded w-full py-2 px-3 text-white placeholder-gray-400 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="flex-grow shadow-sm appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
           <button
             type="submit"
@@ -91,11 +91,11 @@ const TableManagement: React.FC = () => {
         </form>
         <div className="space-y-4">
           {tables.length > 0 ? tables.map(table => (
-            <div key={table.id} className="flex items-center justify-between bg-indigo-800 text-white p-4 rounded-lg shadow">
-              <span className="font-bold text-lg">{table.name}</span>
+            <div key={table.id} className="flex items-center justify-between bg-gray-50 p-4 rounded-lg shadow-sm border">
+              <span className="font-bold text-lg text-gray-800">{table.name}</span>
               <div className="flex items-center gap-4">
-                <button onClick={() => handleShowQrCode(table)} className="text-blue-300 hover:text-blue-100 font-semibold text-sm transition-colors">查看二維碼</button>
-                <button onClick={() => handleDeleteTable(table.id)} className="text-red-400 hover:text-red-200 font-semibold text-sm transition-colors">刪除</button>
+                <button onClick={() => handleShowQrCode(table)} className="text-indigo-600 hover:text-indigo-800 font-semibold text-sm transition-colors">查看二維碼</button>
+                <button onClick={() => handleDeleteTable(table.id)} className="text-red-500 hover:text-red-700 font-semibold text-sm transition-colors">刪除</button>
               </div>
             </div>
           )) : (

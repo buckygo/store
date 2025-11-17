@@ -1,6 +1,7 @@
+
 import React from 'react';
-import { type Dish } from '../types';
-import MenuItem from './MenuItem';
+import { type Dish } from '../types.ts';
+import MenuItem from './MenuItem.tsx';
 
 interface MenuProps {
   menuData: Dish[];
